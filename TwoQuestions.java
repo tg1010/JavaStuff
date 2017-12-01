@@ -12,9 +12,9 @@ public class TwoQuestions {
 		System.out.println("Question 2) Is it bigger than a breadbox?");
 		String ans2 = keyboard.next();
 
-		if ( ans1 == "animal" ) {
+		if ( ans1.equals("animal") ) {
 
-			if ( ans2 == "yes" ) {
+			if ( ans2.equals("yes") ) {
 
 				System.out.println("My guess is Moose");
 			} else {
@@ -22,15 +22,25 @@ public class TwoQuestions {
 				System.out.println("My guess is Mouse");
 			}
 		}
-		else if ( ans1 == "vegetable" ) {
+		else if ( ans1.equals("vegetable") ) {
 
-			if ( ans2 == "yes" ) {
+			if ( ans2.equals("yes") ) {
 
 				System.out.println("My guess is Watermelon");
 
 			} else {
 
 				System.out.println("My guess is carrot");
+			}
+		}
+		else if ( ans1.equals("mineral") ) {
+
+			if ( ans2.equals("yes") ) {
+
+				System.out.println("My guess is a Camaro");
+			} else {
+
+				System.out.println("My guess is a paper clip");
 			}
 		}
 	}
